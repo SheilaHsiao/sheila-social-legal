@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>OAuth Callback — Sheila 社群自動發文</title>
+<style>body{font-family:-apple-system,"PingFang TC",sans-serif;max-width:640px;margin:60px auto;padding:0 20px;line-height:1.7}
+code{background:#f2f0ec;padding:8px 12px;border-radius:6px;display:block;word-break:break-all;margin:12px 0}
+button{padding:8px 18px;border:1px solid #333;background:#fff;border-radius:6px;cursor:pointer}</style>
+</head>
+<body>
+<h2>授權完成 Authorization complete</h2>
+<p>把下面的 code 複製後回到終端機繼續(此頁不會把 code 傳到任何地方,純本地顯示):</p>
+<code id="c">(no code in URL)</code>
+<button onclick="navigator.clipboard.writeText(document.getElementById('c').textContent)">複製 Copy</button>
+<script>
+const p = new URLSearchParams(location.search).get("code");
+if (p) document.getElementById("c").textContent = p;
+</script>
+</body>
+</html>
