@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>高雄地皮百科 Nico — 千萬房仲,每週拆一個高雄房市真相</title>
-<meta name="description" content="千萬房仲 Nico,每週拆一個高雄房市真相:豪宅法拍、預售屋解約潮、銀行怎麼看你。">
+<title>Nico|高雄地皮百科 — 在高雄房地產 20 年,一次拆一塊地的真相</title>
+<meta name="description" content="在高雄房地產 20 年,一次拆一塊地的真相">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0f2a3d">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:site_name" content="高雄地皮百科 Nico">
-<meta property="og:title" content="高雄地皮百科 Nico">
-<meta property="og:description" content="千萬房仲,每週拆一個高雄房市真相:豪宅法拍、預售屋解約潮、銀行怎麼看你。">
+<meta property="og:title" content="Nico|高雄地皮百科">
+<meta property="og:description" content="在高雄房地產 20 年,一次拆一塊地的真相">
 <meta property="og:url" content="https://sheilahsiao.github.io/sheila-social-legal/nico.html">
 <meta property="og:image" content="https://sheilahsiao.github.io/sheila-social-legal/og-nico.jpg">
 <meta property="og:image:width" content="1200">
@@ -41,6 +41,9 @@
   h1{font-size:2em;line-height:1.3;margin:0 0 .4em}
   h1 .en{color:var(--accent)}
   .sub{font-size:1.1em;margin:0;color:#dfe6ec}
+  .profile{display:flex;align-items:center;gap:14px;margin-top:24px}
+  .avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);background:#1a3d57;flex-shrink:0}
+  .profile-name{font-weight:600;font-size:1.05em}
 
   main{padding:32px 0 8px}
   h2{font-size:1.15em;margin:0 0 1em}
@@ -56,13 +59,14 @@
   .btn-primary:active{background:#1a3d57}
   .btn-secondary{background:transparent;color:var(--brand);border:2px solid var(--brand)}
   .btn-secondary:active{background:#e9e4da}
+  .note{text-align:center;color:var(--muted);font-size:.85em;margin:-20px 0 32px}
 
   footer{margin-top:2em;color:#888;font-size:.85em;border-top:1px solid #ddd;padding:1em 0 2em}
 
   @media (min-width:600px){
     header.hero{padding:80px 0 56px}
     h1{font-size:2.4em}
-    .cards{grid-template-columns:repeat(3,1fr)}
+    .cards{grid-template-columns:repeat(2,1fr)}
     .cta{grid-template-columns:1fr 1fr}
   }
 </style>
@@ -73,7 +77,11 @@
   <div class="wrap">
     <span class="tag">KAOHSIUNG REAL ESTATE</span>
     <h1>高雄地皮百科 <span class="en">Nico</span></h1>
-    <p class="sub">千萬房仲,每週拆一個高雄房市真相</p>
+    <p class="sub">在高雄房地產 20 年,一次拆一塊地的真相</p>
+    <div class="profile">
+      <img class="avatar" src="nico-avatar.jpg" alt="Nico" width="64" height="64">
+      <span class="profile-name">Nico|高雄地皮百科</span>
+    </div>
   </div>
 </header>
 
@@ -82,18 +90,23 @@
   <ul class="cards">
     <li class="card">
       <span class="no">SERIES 01</span>
-      <h3>豪宅法拍</h3>
-      <p>千萬豪宅為什麼會走進法拍?拆解背後的故事與行情。</p>
+      <h3>一塊地的事</h3>
+      <p>已講完 12 塊地:仰德美麗島、萊爾富那塊…</p>
     </li>
     <li class="card">
       <span class="no">SERIES 02</span>
       <h3>預售屋解約潮</h3>
-      <p>解約潮真的來了嗎?買方、建商各自的算盤一次看懂。</p>
+      <p>台中篇 24 萬次觀看</p>
     </li>
     <li class="card">
       <span class="no">SERIES 03</span>
+      <h3>法拍屋</h3>
+      <p>點交、欠稅、有人住在裡面</p>
+    </li>
+    <li class="card">
+      <span class="no">SERIES 04</span>
       <h3>銀行怎麼看你</h3>
-      <p>貸款成數、利率怎麼定?站在銀行的角度看你的條件。</p>
+      <p>不只看你的收入</p>
     </li>
   </ul>
 
@@ -101,6 +114,7 @@
     <a class="btn btn-primary js-utm" href="https://www.instagram.com/beehome888" rel="noopener">到 IG 看片</a>
     <a class="btn btn-secondary js-utm" href="https://www.instagram.com/beehome888" rel="noopener">私訊 Nico</a>
   </div>
+  <p class="note">點進 IG 直接看片,不用留任何資料</p>
 </main>
 
 <footer class="wrap">© 2026 高雄地皮百科 Nico</footer>
